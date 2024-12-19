@@ -1,0 +1,6 @@
+spring:
+  application:
+    name:
+      multiple-data-sources
+server:
+  port: 8080
