@@ -1,6 +1,7 @@
 package com.zyl.multiple.data.sources.controller;
 
-import com.zyl.multiple.data.sources.pojo.User;
+import com.zyl.multiple.data.sources.pojo.mysql.User;
+import com.zyl.multiple.data.sources.pojo.ms.UserTable;
 import com.zyl.multiple.data.sources.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,5 +26,12 @@ public class TestController {
     public List<User> getAllUser(){
         return userService.getAllUser();
     }
+
+    @GetMapping("getAllUserTable")
+    public List<UserTable> getAllUserTable(){
+        return userService.getAllUserTable();
+    }
+
+
 
 }

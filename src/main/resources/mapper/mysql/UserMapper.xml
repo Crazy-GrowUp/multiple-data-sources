@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zyl.multiple.data.sources.mapper.UserMapper">
+<mapper namespace="com.zyl.multiple.data.sources.mapper.mysql.UserMapper">
 
-    <select id="getAllUser" resultType="user">
+    <select id="getAllUser" resultType="com.zyl.multiple.data.sources.pojo.mysql.User">
         select *
         from user
     </select>

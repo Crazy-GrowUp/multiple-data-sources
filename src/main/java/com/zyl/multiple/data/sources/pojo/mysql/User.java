@@ -1,4 +1,4 @@
-package com.zyl.multiple.data.sources.pojo;
+package com.zyl.multiple.data.sources.pojo.mysql;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

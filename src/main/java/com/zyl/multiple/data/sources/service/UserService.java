@@ -1,7 +1,7 @@
 package com.zyl.multiple.data.sources.service;
 
-import com.zyl.multiple.data.sources.pojo.User;
-import org.springframework.stereotype.Service;
+import com.zyl.multiple.data.sources.pojo.mysql.User;
+import com.zyl.multiple.data.sources.pojo.ms.UserTable;
 
 import java.util.List;
 
@@ -13,4 +13,6 @@ import java.util.List;
  **/
 public interface UserService {
     List<User> getAllUser();
+
+    List<UserTable> getAllUserTable();
 }

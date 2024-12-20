@@ -1,6 +1,6 @@
-package com.zyl.multiple.data.sources.mapper;
+package com.zyl.multiple.data.sources.mapper.mysql;
 
-import com.zyl.multiple.data.sources.pojo.User;
+import com.zyl.multiple.data.sources.pojo.mysql.User;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
