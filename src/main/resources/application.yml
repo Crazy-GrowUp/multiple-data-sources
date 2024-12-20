@@ -21,8 +21,8 @@ mybatis:
 #  mapper-locations:
 #    - classpath:mapper/ms/*.xml
 #    - classpath:mapper/mysql/*.xml
-  type-aliases-package: com.zyl.multiple.data.sources.pojo
-  configLocation: classpath:mybatis/mybatis-config.xml
+#  type-aliases-package: com.zyl.multiple.data.sources.pojo
+#  configLocation: classpath:mybatis/mybatis-config.xml
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     map-underscore-to-camel-case: true
