@@ -6,16 +6,24 @@ spring:
       multiple-data-sources
   datasource:
     mysql:
-      driver-class-name: com.mysql.jdbc.Driver
+#      driver-class-name: com.mysql.jdbc.Driver #可以去除，如果是特殊版本，可以自己导入
       # spring中使用jdbc连接数据库时，url要写成jdbc-url
-      jdbc-url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&useAffectedRows=true&allowMultiQueries=true
+      url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&useAffectedRows=true&allowMultiQueries=true
       username: root
       password: 123456
+      type: com.alibaba.druid.pool.DruidDataSource # 连接池类型
+      initial-size: 5  # 初始连接数
+      min-idle: 5  # 闲置连接数
+      max-active: 50  # 最大连接数
     sqlserver:
-      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
-      jdbc-url: jdbc:sqlserver://localhost:1433;databaseName=Test2;encrypt=false;trustServerCertificate=false;
+#      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver #可以去除，如果是特殊版本，可以自己导入
+      url: jdbc:sqlserver://localhost:1433;databaseName=Test2;encrypt=false;trustServerCertificate=false;
       username: sa
       password: 123456
+      type: com.alibaba.druid.pool.DruidDataSource # 连接池类型
+      initial-size: 5  # 初始连接数
+      min-idle: 5  # 闲置连接数
+      max-active: 50  # 最大连接数
 
 mybatis:
 #  mapper-locations:
