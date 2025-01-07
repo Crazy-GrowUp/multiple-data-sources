@@ -32,6 +32,32 @@ public class TestController {
         return userService.getAllUserTable();
     }
 
+    // 这里为了测试使用 get 方法
+    @GetMapping("addUser")
+    public String addUser(){
+        return userService.testMyAndMS();
+    }
+
+
+    @GetMapping("addUser2")
+    public String addUser2(){
+        return userService.testMyAndMS2();
+    }
+
+    @GetMapping("addUser3")
+    public String addUser3(){
+        return userService.testMyAndMS3();
+    }
+
+    @GetMapping("addUser4")
+    public String addUser4(){
+        return userService.testMyAndMS4();
+    }
+
+    @GetMapping("addUser5")
+    public String addUser5(){
+        return userService.testMyAndMS5();
+    }
 
 
 }

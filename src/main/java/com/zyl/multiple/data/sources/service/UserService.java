@@ -15,4 +15,15 @@ public interface UserService {
     List<User> getAllUser();
 
     List<UserTable> getAllUserTable();
+
+    String testMyAndMS();
+
+    String testMyAndMS2();
+
+    String testMyAndMS3();
+
+    String testMyAndMS4();
+
+    String testMyAndMS5();
+
 }

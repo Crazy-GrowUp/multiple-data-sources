@@ -5,6 +5,7 @@ import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
@@ -33,7 +34,7 @@ public class MySqlConfig {
     }
 
     @Bean(name = "mysqlTransactionManager")
-//    @Primary //(重要)配置mysql为主要事务管理器
+    @Primary //(重要)配置mysql为主要事务管理器
     public DataSourceTransactionManager mysqlTransactionManager(DataSource dataSource) {
         return new DataSourceTransactionManager(dataSource);
     }

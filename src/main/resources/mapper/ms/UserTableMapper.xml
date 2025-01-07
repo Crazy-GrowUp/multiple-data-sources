@@ -9,4 +9,8 @@
         from user_table
     </select>
 
+    <insert id="addMsUser" parameterType="com.zyl.multiple.data.sources.pojo.ms.UserTable">
+        insert into user_table(name,age) values (#{name},#{age})
+    </insert>
+
 </mapper>

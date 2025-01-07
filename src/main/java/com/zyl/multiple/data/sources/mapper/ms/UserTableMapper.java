@@ -16,4 +16,6 @@ public interface UserTableMapper {
 
     List<UserTable> getAllUserTables();
 
+    Integer addMsUser(UserTable userTable);
+
 }

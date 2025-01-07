@@ -9,4 +9,8 @@
         from user
     </select>
 
+    <insert id="addUser" parameterType="com.zyl.multiple.data.sources.pojo.mysql.User">
+        insert into user(id,name,age) values (#{id},#{name},#{age})
+    </insert>
+
 </mapper>

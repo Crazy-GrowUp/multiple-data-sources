@@ -14,4 +14,6 @@ import java.util.List;
 @Mapper
 public interface UserMapper {
     List<User> getAllUser();
+
+    Integer addUser(User user);
 }
